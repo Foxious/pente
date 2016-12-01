@@ -39,11 +39,12 @@ var doTurn = function() {
 
   };
 
-  if(gm.turn === 'X') {
+  // if you want to turn the AI off, then
+  if(gm.turn === 'X') { //comment me,
     prompt.get(['move'], resolve);
-  } else {
-    resolve(null, { move: aiMove().join(',') } );
-  }
+  } else { // comment me,
+    resolve(null, { move: aiMove().join(',') } ); // comment me,
+  } // and comment me
 }
 
 gm.board.init();
